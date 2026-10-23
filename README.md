@@ -1,6 +1,12 @@
 # VRIL LLC — sitio web
 
-Landing de una página + Términos, Privacidad y 404. Orientado a presencia empresarial y requisitos habituales de Stripe (servicios claros, precios, contacto, políticas).
+Landing + Términos, Privacidad y 404. Orientado a presencia empresarial y requisitos habituales de Stripe.
+
+## En vivo
+
+- **Producción:** https://vrilwebapp.vercel.app
+- **GitHub:** https://github.com/itsConflei/VrilWebApp
+- **Formulario:** Formspree `mpppaeop` → correo del admin configurado en Formspree
 
 ## Arranque local
 
@@ -10,41 +16,26 @@ npm start
 
 Abre `http://localhost:5173`.
 
-## Antes de publicar (crítico para Stripe)
+## Configuración (`js/config.js`)
 
-Edita **`js/config.js`**:
-
-| Campo | Notas |
+| Campo | Estado |
 | --- | --- |
-| `email` | Correo real de la empresa |
-| `phone` | Opcional pero recomendable |
-| `location` | Ciudad o área, p. ej. `San Juan, Puerto Rico` |
-| `registryNumber` | Solo si está verificado en el Dpto. de Estado de PR |
-| `formspreeId` | ID de Formspree para el formulario de contacto |
+| `siteUrl` | `https://vrilwebapp.vercel.app` |
+| `formspreeId` | `mpppaeop` |
+| `email` | Placeholder — poner correo real |
+| `phone` | Vacío (opcional, recomendado) |
+| `location` | `Puerto Rico` — idealmente ciudad |
+| `registryNumber` | Solo si está verificado en PR |
 
-También:
+## Pendiente antes de Stripe
 
-1. Sustituir URLs canónicas / sitemap con el dominio final.
-2. Convertir `assets/og-image.svg` a PNG 1200×630 si el host de compartir no acepta SVG.
-3. Revisar Términos y Privacidad con un abogado en Puerto Rico (hoy son borradores).
-4. Confirmar el rojo de marca (`#C8102E` en CSS).
-5. Desplegar en HTTPS (Vercel, Netlify, etc.) y enlazar esa URL en Stripe.
+1. Correo real del administrador (sitio + Formspree).
+2. Ciudad / área de servicio.
+3. Teléfono (recomendado).
+4. Revisión legal de Términos y Privacidad en Puerto Rico.
+5. Dominio propio (opcional pero más profesional).
+6. Probar envío del formulario de punta a punta.
 
-## Estructura
+## Despliegue
 
-```
-index.html          Landing
-terminos.html       Términos (con política de reembolso)
-privacidad.html     Aviso de privacidad
-404.html
-css/styles.css
-js/config.js        Datos editables
-js/main.js
-assets/
-```
-
-## Despliegue rápido (Vercel)
-
-1. Sube el repo o arrastra la carpeta a Vercel.
-2. Framework preset: Other / static.
-3. Dominio personalizado recomendado (ej. `vril.pr` o `www.vrilllc.com`).
+Push a `main` en GitHub → Vercel redespliega automáticamente.

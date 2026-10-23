@@ -261,6 +261,11 @@ textarea:focus-visible {
   padding-left: 1rem;
 }
 
+.note a {
+  color: var(--red);
+  text-underline-offset: 2px;
+}
+
 /* ——— Hero ——— */
 .hero {
   background: var(--black);
