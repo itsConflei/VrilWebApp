@@ -22,19 +22,17 @@ Abre `http://localhost:5173`.
 | --- | --- |
 | `siteUrl` | `https://vrilwebapp.vercel.app` |
 | `formspreeId` | `mpppaeop` |
-| `email` | Placeholder — poner correo real |
-| `phone` | Vacío (opcional, recomendado) |
-| `location` | `Puerto Rico` — idealmente ciudad |
+| `email` | `management@vrilcapitalinvestments.com` |
+| `phone` | Omitido a propósito |
+| `location` | `Puerto Rico` (sin ciudad) |
 | `registryNumber` | Solo si está verificado en PR |
 
 ## Pendiente antes de Stripe
 
-1. Correo real del administrador (sitio + Formspree).
-2. Ciudad / área de servicio.
-3. Teléfono (recomendado).
-4. Revisión legal de Términos y Privacidad en Puerto Rico.
-5. Dominio propio (opcional pero más profesional).
-6. Probar envío del formulario de punta a punta.
+1. En Formspree, confirmar que las notificaciones van a `management@vrilcapitalinvestments.com`.
+2. Revisión legal de Términos y Privacidad en Puerto Rico.
+3. Dominio propio (opcional pero más profesional).
+4. Probar envío del formulario de punta a punta.
 
 ## Despliegue
 
