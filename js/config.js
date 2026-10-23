@@ -8,5 +8,5 @@ window.VRIL_CONFIG = {
   location: "Puerto Rico", // TODO: ciudad o área (ej. "San Juan, Puerto Rico")
   registryNumber: "", // Solo si se verifica en el Dpto. de Estado de PR
   // Formspree: crea un formulario en https://formspree.io y pega el ID aquí
-  formspreeId: "", // ej. "xyzabcde" → action https://formspree.io/f/xyzabcde
+  formspreeId: "mpppaeop",
 };
